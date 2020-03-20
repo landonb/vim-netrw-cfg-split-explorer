@@ -1,0 +1,40 @@
+*netrw-cfg-split-explorer.txt*  Sets the only netrw defaults that seem to make sense.
+
+Set Project Root~
+
+Copier: Landon Bouma <https://tallybark.com/>
+License: https://creativecommons.org/publicdomain/zero/1.0/
+
+INTRODUCTION                                    *netrw-cfg-split-explorer*
+
+Sets the netrw global variable options to the only values I think make sense.
+
+Be sure you also grab https://github.com/tpope/vim-vinegar.
+
+COMMANDS                                        *netrw-cfg-split-explorer-commands*
+
+None. Sets a few `g:*` netrw configuration values.
+
+- Hide the banner. Press <I> to toggle it.
+>
+  let g:netrw_banner = 0
+<
+- Open files in the current window pane.
+  This is a split explorer after all, and not a project drawer!
+>
+  " Options:
+  "  1 - open files in a new horizontal split
+  "  2 - open files in a new vertical split
+  "  3 - open files in a new tab
+  "  4 - open in previous window
+  "  0 - re-use same window (default)
+  let g:netrw_browse_split = 0
+<
+- Show a 'thin' directory listing. Because bug in 'tree' view cannot open
+  symlinks; the 'long' view is a mess because tab stops do not align; and
+  the 'wide' view generally requires extra keystrokes to find and open files.
+>
+  " Options: 'thin', one-file-per-line (0); long (1); wide (2); and tree (3).
+  let g:netrw_liststyle = 0
+<
+ vim:tw=78:ts=8:ft=help:norl:
