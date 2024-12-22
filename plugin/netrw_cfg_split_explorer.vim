@@ -4,14 +4,23 @@
 " License: https://creativecommons.org/publicdomain/zero/1.0/
 " vim:tw=0:ts=2:sw=2:et:norl:ft=vim
 
-" YOU: Uncomment the 'unlet', then <F9> to reload this file.
-"       https://github.com/landonb/vim-source-reloader
-"  silent! unlet g:loaded_netrw_cfg_split_explorer
+" -------------------------------------------------------------------
+
+" GUARD: Press <F9> to reload this plugin (or :source it).
+" - Via: https://github.com/embrace-vim/vim-source-reloader#↩️
+
+if expand("%:p") ==# expand("<sfile>:p")
+  unlet g:loaded_netrw_cfg_split_explorer
+endif
 
 if exists("g:loaded_netrw_cfg_split_explorer") || &cp
+
   finish
 endif
+
 let g:loaded_netrw_cfg_split_explorer = 1
+
+" -------------------------------------------------------------------
 
 " -------------------------------------------------------------------------
 " netrw/vim-vinegar tweaking
