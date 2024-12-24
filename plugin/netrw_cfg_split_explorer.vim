@@ -9,11 +9,11 @@
 " GUARD: Press <F9> to reload this plugin (or :source it).
 " - Via: https://github.com/embrace-vim/vim-source-reloader#↩️
 
-if expand("%:p") ==# expand("<sfile>:p")
-  unlet g:loaded_netrw_cfg_split_explorer
+if expand('%:p') ==# expand('<sfile>:p')
+  unlet! g:loaded_netrw_cfg_split_explorer
 endif
 
-if exists("g:loaded_netrw_cfg_split_explorer") || &cp
+if exists('g:loaded_netrw_cfg_split_explorer') || &cp
 
   finish
 endif
