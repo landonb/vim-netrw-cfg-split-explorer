@@ -1,8 +1,8 @@
-" The only netrw defaults that seem to make sense. See also vim-vinegar.
+" vim:tw=0:ts=2:sw=2:et:norl:ft=vim
 " Author: Landon Bouma <https://tallybark.com/>
 " Online: https://github.com/landonb/vim-netrw-cfg-split-explorer
 " License: https://creativecommons.org/publicdomain/zero/1.0/
-" vim:tw=0:ts=2:sw=2:et:norl:ft=vim
+" Summary: The only netrw defaults that seem to make sense. See also vim-vinegar.
 
 " -------------------------------------------------------------------
 
@@ -22,9 +22,9 @@ let g:loaded_netrw_cfg_split_explorer = 1
 
 " -------------------------------------------------------------------
 
-" -------------------------------------------------------------------------
+" -------------------------------------------------------------------
 " netrw/vim-vinegar tweaking
-" -------------------------------------------------------------------------
+" -------------------------------------------------------------------
 
 " Ref:
 "
