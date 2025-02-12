@@ -1,6 +1,6 @@
 *netrw-cfg-split-explorer.txt*  Sets the only netrw defaults that seem to make sense.
 
-Set Project Root~
+Set Project Root ~
 
 Copier: Landon Bouma <https://tallybark.com/>
 License: https://creativecommons.org/publicdomain/zero/1.0/
